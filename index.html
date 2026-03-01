@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>名刺掲示板</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>名刺掲示板</h1>
+
+  <div class="form">
+    <input type="file" id="imageInput" accept="image/*" capture="environment">
+    <input type="text" id="company" placeholder="会社名">
+    <input type="text" id="name" placeholder="担当者名">
+    <textarea id="memo" placeholder="メモ"></textarea>
+    <button onclick="addCard()">登録</button>
+  </div>
+
+  <hr>
+
+  <div id="cardList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
